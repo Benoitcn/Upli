@@ -11,7 +11,7 @@ import UIKit
 class Session {
     
     var title: String
-    
+    var titleico:UIImage
     
     class func allSessions() -> [Session] {
         var sessions = [Session]()
@@ -26,8 +26,9 @@ class Session {
         return sessions
     }
     
-    init(title: String) {
+    init(title: String,titleico:UIImage) {
         self.title = title
+        self.titleico=titleico
         //self.speaker = speaker
         //self.room = room
         //self.time = time
@@ -35,10 +36,12 @@ class Session {
     
     convenience init(dictionary: NSDictionary) {
         let title = dictionary["Title"] as? String
+        let _titleico=dictionary["Ico"]as? String
+        let titleico=UIImage(named: _titleico!)?.decompressedImage
         //let speaker//dictionary["Speaker"] as? String
         //let room //'dictionary["Room"] as? String
         //let time //'dictionary["Time"] as? String
-        self.init(title: title!)
+        self.init(title: title!,titleico:titleico!)
     }
     
 }

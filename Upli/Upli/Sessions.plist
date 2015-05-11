@@ -3,36 +3,38 @@
 <plist version="1.0">
 <array>
 	<dict>
-		<key>Background</key>
-		<string>Tutorial-01</string>
+		<key>Ico</key>
+		<string>me_final_editprofile</string>
 		<key>Title</key>
 		<string>Edit profile</string>
 	</dict>
 	<dict>
-		<key>Background</key>
-		<string>Tutorial-01</string>
+		<key>Ico</key>
+		<string>me_final_setting</string>
 		<key>Title</key>
 		<string>Settings</string>
 	</dict>
 	<dict>
-		<key>Background</key>
-		<string>Tutorial-01</string>
+		<key>Ico</key>
+		<string>me_final_traininggoals</string>
 		<key>Title</key>
 		<string>Training goals</string>
 	</dict>
 	<dict>
-		<key>Background</key>
-		<string>Tutorial-01</string>
+		<key>Ico</key>
+		<string>me_final_selfies</string>
 		<key>Title</key>
 		<string>Selfies</string>
 	</dict>
 	<dict>
-		<key>Background</key>
-		<string>Tutorial-01</string>
+		<key>Ico</key>
+		<string>me_final_statistics</string>
 		<key>Title</key>
 		<string>Statistics</string>
 	</dict>
 	<dict>
+		<key>Ico</key>
+		<string>me_final_chats</string>
 		<key>Title</key>
 		<string>Chats</string>
 	</dict>
