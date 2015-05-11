@@ -26,19 +26,24 @@ class Photo {
     var caption: String
     var comment: String
     var image: UIImage
+    var icon: UIImage
     
-    init(caption: String, comment: String, image: UIImage) {
+    init(caption: String, comment: String, image: UIImage, icon: UIImage) {
         self.caption = caption
         self.comment = comment
         self.image = image
+        self.icon = icon
     }
     
     convenience init(dictionary: NSDictionary) {
         let caption = dictionary["Caption"] as? String
         let comment = dictionary["Comment"] as? String
         let photo = dictionary["Photo"] as? String
+        let icon = dictionary["Icon"] as? String
+        
+        let iconImage = UIImage(named: icon!)?.decompressedImage
         let image = UIImage(named: photo!)?.decompressedImage
-        self.init(caption: caption!, comment: comment!, image: image!)
+        self.init(caption: caption!, comment: comment!, image: image!, icon:iconImage!)
     }
     
     func heightForComment(font: UIFont, width: CGFloat) -> CGFloat {

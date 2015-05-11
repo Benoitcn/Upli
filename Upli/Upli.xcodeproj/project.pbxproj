@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FCA803C1B00B5EF00EE16D4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCA803B1B00B5EF00EE16D4 /* AVFoundation.framework */; };
+		9FCA803F1B00B6D300EE16D4 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCA803E1B00B6D300EE16D4 /* Reveal.framework */; };
 		9FE8B6FF1B003DA80062EC6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8B6FE1B003DA80062EC6A /* AppDelegate.swift */; };
 		9FE8B7011B003DA80062EC6A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8B7001B003DA80062EC6A /* FirstViewController.swift */; };
 		9FE8B7031B003DA80062EC6A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8B7021B003DA80062EC6A /* SecondViewController.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9FCA803B1B00B5EF00EE16D4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9FCA803E1B00B6D300EE16D4 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = "/Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/Reveal.framework"; sourceTree = "<absolute>"; };
 		9FE8B6F91B003DA80062EC6A /* Upli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Upli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE8B6FD1B003DA80062EC6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FE8B6FE1B003DA80062EC6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FCA803C1B00B5EF00EE16D4 /* AVFoundation.framework in Frameworks */,
+				9FCA803F1B00B6D300EE16D4 /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +82,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FCA803D1B00B6A200EE16D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FCA803E1B00B6D300EE16D4 /* Reveal.framework */,
+				9FCA803B1B00B5EF00EE16D4 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		9FE8B6F01B003DA80062EC6A = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +125,7 @@
 				9FE8B7021B003DA80062EC6A /* SecondViewController.swift */,
 				9FE8B7041B003DA80062EC6A /* Main.storyboard */,
 				9FE8B7091B003DA80062EC6A /* LaunchScreen.xib */,
+				9FCA803D1B00B6A200EE16D4 /* Frameworks */,
 				9FE8B6FC1B003DA80062EC6A /* Supporting Files */,
 			);
 			path = Upli;
@@ -231,6 +248,7 @@
 				TargetAttributes = {
 					9FE8B6F81B003DA80062EC6A = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 6RV8S2L33H;
 					};
 					9FE8B70F1B003DA80062EC6A = {
 						CreatedOnToolsVersion = 6.4;
@@ -420,8 +438,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
+				);
 				INFOPLIST_FILE = Upli/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -430,8 +460,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
+				);
 				INFOPLIST_FILE = Upli/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -489,6 +531,7 @@
 				9FE8B71C1B003DA90062EC6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9FE8B71D1B003DA90062EC6A /* Build configuration list for PBXNativeTarget "UpliTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +540,7 @@
 				9FE8B71F1B003DA90062EC6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
