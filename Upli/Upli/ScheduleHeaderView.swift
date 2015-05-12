@@ -29,7 +29,7 @@ class ScheduleHeaderView: UICollectionReusableView {
         super.applyLayoutAttributes(layoutAttributes)
         
         if let attr:collectionViewAttribute = layoutAttributes as? collectionViewAttribute {
-            backgroundImageViewHeightConstraint.constant = backgroundImageHeight - attr.deltaY
+           backgroundImageViewHeightConstraint.constant = backgroundImageHeight - attr.deltaY
         }
     }
 }

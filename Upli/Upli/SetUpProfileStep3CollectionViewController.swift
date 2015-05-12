@@ -20,8 +20,10 @@ class SetUpProfileStep3CollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         
         let width = CGRectGetWidth(collectionView!.bounds)
+        let heigh=CGRectGetHeight(collectionView!.bounds)
         let layout = collectionViewLayout as! MeLayout
         layout.itemSize = CGSize(width: width, height: 100)
+        layout.footerReferenceSize = CGSizeMake(width,250)
     }
 }
 extension SetUpProfileStep3CollectionViewController {
@@ -37,7 +39,10 @@ extension SetUpProfileStep3CollectionViewController {
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return setUpProfileStep3s.count
     }
-    
+    override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "ScheduleHeader", forIndexPath: indexPath) as! ScheduleHeaderView
+        return header
+    }
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("SetUpProfileStep3Cell", forIndexPath: indexPath)as! SetUpProfileStep3Cell
         cell.setUpProfileStep3 = setUpProfileStep3s[indexPath.item]
