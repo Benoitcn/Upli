@@ -36,7 +36,7 @@ class SetUpProfileStep3Cell: UICollectionViewCell ,UIPickerViewDataSource,UIPick
         pickerLabel.textColor=UIColor.blackColor()
         pickerLabel.textAlignment=NSTextAlignment.Center
         pickerLabel.adjustsFontSizeToFitWidth = true;
-        //pickerLabel.backgroundColor = UIColor(hue: hue, saturation: 1.0, brightness:1.0, alpha: 1.0)
+        pickerLabel.tintColor=UIColor.redColor()// .backgroundColor = UIColor(hue: 0.1, saturation: 1, brightness: 2, alpha: 1)
         pickerLabel.font=UIFont.boldSystemFontOfSize(20)
         pickerLabel.text = pickerView2(pickerView, titleForRow: row, forComponent: component)
         return pickerLabel;
@@ -52,7 +52,7 @@ class SetUpProfileStep3Cell: UICollectionViewCell ,UIPickerViewDataSource,UIPick
         return PickerItem.objectAtIndex(row) as! String
     }
     func pickerView(pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
-        let titleData = PickerItem[row]
+        let titleData: AnyObject = PickerItem[row]
         var myTitle = NSAttributedString(string: titleData as! String, attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 15.0)!,NSForegroundColorAttributeName:UIColor.blueColor()])
         return myTitle
     }
