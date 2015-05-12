@@ -11,6 +11,7 @@ import UIKit
 class SetUpProfileStep3Cell: UICollectionViewCell ,UIPickerViewDataSource,UIPickerViewDelegate{
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var pickval: UIPickerView!
+    @IBOutlet private weak var separatorViewHeightLayoutConstraint: NSLayoutConstraint!
     var PickerItem:NSArray = []
     var setUpProfileStep3: SetUpProfileStep3? {
         didSet {
@@ -22,20 +23,42 @@ class SetUpProfileStep3Cell: UICollectionViewCell ,UIPickerViewDataSource,UIPick
             }
         }
     }
-    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        separatorViewHeightLayoutConstraint.constant = 1
+    }
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
-
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView!) -> UIView {
+        var pickerLabel:UILabel=UILabel()
+        
+        pickerLabel.textColor=UIColor.blackColor()
+        pickerLabel.textAlignment=NSTextAlignment.Center
+        pickerLabel.adjustsFontSizeToFitWidth = true;
+        //pickerLabel.backgroundColor = UIColor(hue: hue, saturation: 1.0, brightness:1.0, alpha: 1.0)
+        pickerLabel.font=UIFont.boldSystemFontOfSize(20)
+        pickerLabel.text = pickerView2(pickerView, titleForRow: row, forComponent: component)
+        return pickerLabel;
+        
+    }
+    func pickerView(pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+        return 36.0
+    }
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        //myLabel.text = pickerData[row]
+    }
+    func pickerView2(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
         return PickerItem.objectAtIndex(row) as! String
     }
-    
+    func pickerView(pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        let titleData = PickerItem[row]
+        var myTitle = NSAttributedString(string: titleData as! String, attributes: [NSFontAttributeName:UIFont(name: "Georgia", size: 15.0)!,NSForegroundColorAttributeName:UIColor.blueColor()])
+        return myTitle
+    }
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return PickerItem.count
     }
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
+
 
 }
