@@ -219,7 +219,7 @@
             <objects>
                 <collectionViewController id="9T8-Kc-yNY" customClass="DiscoverViewController" customModule="Upli" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="E4c-PZ-41N">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.90588235294117647" green="0.90588235294117647" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewLayout key="collectionViewLayout" id="GXc-kq-2Md" customClass="SocialLayout" customModule="Upli" customModuleProvider="target"/>
@@ -228,12 +228,95 @@
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="468"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fI-xL-CKw" customClass="RoundedCornersView" customModule="Upli" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="468"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gyg-Vp-jSE">
+                                                    <rect key="frame" x="0.0" y="47" width="200" height="309"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="309" id="oyd-vo-YaD"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="id4-cx-OtO">
+                                                    <rect key="frame" x="5" y="8" width="36" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="36" id="KJD-FX-DMf"/>
+                                                        <constraint firstAttribute="height" constant="36" id="rLP-DO-7Ac"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="44" translatesAutoresizingMaskIntoConstraints="NO" id="Oxy-hL-i20">
+                                                    <rect key="frame" x="165" y="15" width="26" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="26" id="Oce-nu-hIl"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8T6-7R-ERX">
+                                                    <rect key="frame" x="51" y="15" width="29" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="80" id="30o-Bj-5YF"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duE-cZ-pB3">
+                                                    <rect key="frame" x="0.0" y="360" width="200" height="80"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="lZr-e6-G4w"/>
+                                                    </constraints>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="duE-cZ-pB3" secondAttribute="trailing" id="01V-ba-9SZ"/>
+                                                <constraint firstItem="8T6-7R-ERX" firstAttribute="top" secondItem="8fI-xL-CKw" secondAttribute="top" constant="15" id="5G1-u7-4qM"/>
+                                                <constraint firstItem="Oxy-hL-i20" firstAttribute="centerY" secondItem="8T6-7R-ERX" secondAttribute="centerY" id="Fg0-59-115"/>
+                                                <constraint firstItem="gyg-Vp-jSE" firstAttribute="top" secondItem="8fI-xL-CKw" secondAttribute="top" constant="47" id="Xqk-WS-xSP"/>
+                                                <constraint firstItem="gyg-Vp-jSE" firstAttribute="leading" secondItem="8fI-xL-CKw" secondAttribute="leading" id="dLv-ae-5wT"/>
+                                                <constraint firstItem="duE-cZ-pB3" firstAttribute="top" secondItem="gyg-Vp-jSE" secondAttribute="bottom" constant="4" id="dlM-lO-hHV"/>
+                                                <constraint firstItem="Oxy-hL-i20" firstAttribute="top" secondItem="8fI-xL-CKw" secondAttribute="top" constant="15" id="gcT-o5-Ezi"/>
+                                                <constraint firstItem="8T6-7R-ERX" firstAttribute="leading" secondItem="id4-cx-OtO" secondAttribute="trailing" constant="10" id="i1W-9f-7ey"/>
+                                                <constraint firstItem="id4-cx-OtO" firstAttribute="leading" secondItem="8fI-xL-CKw" secondAttribute="leading" constant="5" id="isF-x7-vYy"/>
+                                                <constraint firstItem="id4-cx-OtO" firstAttribute="top" secondItem="8fI-xL-CKw" secondAttribute="top" constant="8" id="mHZ-AH-UFz"/>
+                                                <constraint firstAttribute="trailing" secondItem="gyg-Vp-jSE" secondAttribute="trailing" id="mJf-Hx-tyL"/>
+                                                <constraint firstAttribute="trailing" secondItem="Oxy-hL-i20" secondAttribute="trailing" constant="9" id="nab-4F-wMX"/>
+                                                <constraint firstItem="duE-cZ-pB3" firstAttribute="leading" secondItem="8fI-xL-CKw" secondAttribute="leading" id="qLM-hR-bJ5"/>
+                                                <constraint firstItem="8T6-7R-ERX" firstAttribute="centerY" secondItem="id4-cx-OtO" secondAttribute="centerY" id="vSb-Yk-g8t"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="customSize" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstItem="8fI-xL-CKw" firstAttribute="top" secondItem="oRh-hx-yo7" secondAttribute="top" id="Ca0-KT-L9u"/>
+                                    <constraint firstAttribute="bottom" secondItem="8fI-xL-CKw" secondAttribute="bottom" id="EoP-Qj-xE9"/>
+                                    <constraint firstItem="8fI-xL-CKw" firstAttribute="leading" secondItem="oRh-hx-yo7" secondAttribute="leading" id="HVb-Vk-zpH"/>
+                                    <constraint firstAttribute="trailing" secondItem="8fI-xL-CKw" secondAttribute="trailing" id="f8n-CL-o5h"/>
+                                </constraints>
+                                <size key="customSize" width="200" height="468"/>
+                                <connections>
+                                    <outlet property="annotationTextView" destination="duE-cZ-pB3" id="8Kn-gj-UhG"/>
+                                    <outlet property="annotationViewHeightLayoutConstraint" destination="lZr-e6-G4w" id="mfQ-Pb-LgD"/>
+                                    <outlet property="iconImage" destination="id4-cx-OtO" id="c8f-LN-4dE"/>
+                                    <outlet property="imageView" destination="gyg-Vp-jSE" id="tEm-9e-Toa"/>
+                                    <outlet property="imageViewHeightLayoutConstraint" destination="oyd-vo-YaD" id="sHe-62-ROK"/>
+                                    <outlet property="timeFrameLabel" destination="Oxy-hL-i20" id="UH9-uN-CFg"/>
+                                    <outlet property="userName" destination="8T6-7R-ERX" id="ADI-DR-VI6"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
