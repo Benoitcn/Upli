@@ -43,9 +43,6 @@ class AnnotatedPhotoCell: UICollectionViewCell {
         let attr = layoutAttributes as! socialLayoutAttribute
         
         imageViewHeightLayoutConstraint.constant = attr.imageHeight
-        annotationViewHeightLayoutConstraint.constant = attr.commentHeight
-        
-        println("image view height:\(attr.imageHeight)")
-        
+        annotationViewHeightLayoutConstraint.constant = attr.commentHeight        
     }
 }

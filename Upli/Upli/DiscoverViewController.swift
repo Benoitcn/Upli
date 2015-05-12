@@ -60,11 +60,7 @@ extension DiscoverViewController: SocialLayoutDelegate {
         paragraphStyle.lineHeightMultiple = 0
         
         let constraintSize = CGSizeMake(width, CGFloat(CGFloat.max))
-//        let measuredSize:CGSize = comment.sizeWithAttributes([NSFontAttributeName:UIFont.systemFontOfSize(15.0), NSParagraphStyleAttributeName:paragraphStyle])
-        
-        let attributeString = NSAttributedString(string: photo.comment)
         let stringDrawOptions = NSStringDrawingOptions.UsesFontLeading | NSStringDrawingOptions.UsesLineFragmentOrigin
-        
         let measuredRect = comment.boundingRectWithSize(constraintSize, options: stringDrawOptions, attributes: [NSFontAttributeName:UIFont.systemFontOfSize(15.0), NSParagraphStyleAttributeName:paragraphStyle], context: nil)
         
         return measuredRect.size.height
