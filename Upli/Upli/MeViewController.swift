@@ -21,7 +21,7 @@ class MeViewController: UICollectionViewController {
         
         let width = CGRectGetWidth(collectionView!.bounds)
         let layout = collectionViewLayout as! MeLayout
-        layout.itemSize = CGSize(width: width, height: 35)
+        layout.itemSize = CGSize(width: width, height: 50)
         layout.headerReferenceSize = CGSizeMake(width, 162)
     }
     

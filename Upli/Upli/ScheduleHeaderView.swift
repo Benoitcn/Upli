@@ -22,7 +22,7 @@ class ScheduleHeaderView: UICollectionReusableView {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        backgroundImageHeight = backgroundImageViewHeightConstraint.constant
+       backgroundImageHeight = backgroundImageViewHeightConstraint.constant
     }
     
     override func applyLayoutAttributes(layoutAttributes: UICollectionViewLayoutAttributes!) {
