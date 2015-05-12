@@ -22,6 +22,10 @@
 		9FE8B7311B0045F80062EC6A /* AnnotatedPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8B7301B0045F80062EC6A /* AnnotatedPhotoCell.swift */; };
 		9FE8B7341B0046200062EC6A /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8B7331B0046200062EC6A /* RoundedCornersView.swift */; };
 		9FE8B7361B004E540062EC6A /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8B7351B004E540062EC6A /* DiscoverViewController.swift */; };
+		B036B0DF1B01B1E00031955E /* SetUpProfileStep3CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B036B0DE1B01B1E00031955E /* SetUpProfileStep3CollectionViewController.swift */; };
+		B036B0E11B01B27F0031955E /* SetUpProfileStep3Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B036B0E01B01B27F0031955E /* SetUpProfileStep3Cell.swift */; };
+		B036B0E31B01BB510031955E /* SetUpProfileStep3Item.plist in Resources */ = {isa = PBXBuildFile; fileRef = B036B0E21B01BB510031955E /* SetUpProfileStep3Item.plist */; };
+		B036B0E51B01BD630031955E /* SetUpProfileStep3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B036B0E41B01BD630031955E /* SetUpProfileStep3.swift */; };
 		B0C17B481B00865B00ABCE36 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C17B471B00865B00ABCE36 /* ScheduleCell.swift */; };
 		B0C17B4A1B0086B200ABCE36 /* Sessions.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0C17B491B0086B200ABCE36 /* Sessions.plist */; };
 		B0C17B4C1B0087DA00ABCE36 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C17B4B1B0087DA00ABCE36 /* Session.swift */; };
@@ -62,6 +66,10 @@
 		9FE8B7301B0045F80062EC6A /* AnnotatedPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotatedPhotoCell.swift; sourceTree = "<group>"; };
 		9FE8B7331B0046200062EC6A /* RoundedCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
 		9FE8B7351B004E540062EC6A /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		B036B0DE1B01B1E00031955E /* SetUpProfileStep3CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpProfileStep3CollectionViewController.swift; sourceTree = "<group>"; };
+		B036B0E01B01B27F0031955E /* SetUpProfileStep3Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpProfileStep3Cell.swift; sourceTree = "<group>"; };
+		B036B0E21B01BB510031955E /* SetUpProfileStep3Item.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SetUpProfileStep3Item.plist; sourceTree = "<group>"; };
+		B036B0E41B01BD630031955E /* SetUpProfileStep3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpProfileStep3.swift; sourceTree = "<group>"; };
 		B0C17B471B00865B00ABCE36 /* ScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
 		B0C17B491B0086B200ABCE36 /* Sessions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Sessions.plist; sourceTree = "<group>"; };
 		B0C17B4B1B0087DA00ABCE36 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -158,6 +166,7 @@
 			children = (
 				B0C17B491B0086B200ABCE36 /* Sessions.plist */,
 				9FE8B7221B0044970062EC6A /* Photos.plist */,
+				B036B0E21B01BB510031955E /* SetUpProfileStep3Item.plist */,
 				9FE8B7071B003DA80062EC6A /* Images.xcassets */,
 				9FE8B7251B0044B70062EC6A /* Discover_Temp_Assets.xcassets */,
 				B0C17B541B00CEDD00ABCE36 /* MeView.xcassets */,
@@ -187,6 +196,7 @@
 			children = (
 				9FE8B72D1B0045A60062EC6A /* Photo.swift */,
 				B0C17B4B1B0087DA00ABCE36 /* Session.swift */,
+				B036B0E41B01BD630031955E /* SetUpProfileStep3.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -198,6 +208,7 @@
 				9FE8B7331B0046200062EC6A /* RoundedCornersView.swift */,
 				B0C17B471B00865B00ABCE36 /* ScheduleCell.swift */,
 				B0C17B4D1B00891300ABCE36 /* ScheduleHeaderView.swift */,
+				B036B0E01B01B27F0031955E /* SetUpProfileStep3Cell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -207,6 +218,7 @@
 			children = (
 				B0C17B521B008F1800ABCE36 /* MeViewController.swift */,
 				B0C17B561B00F66B00ABCE36 /* EditProfileViewController.swift */,
+				B036B0DE1B01B1E00031955E /* SetUpProfileStep3CollectionViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -296,6 +308,7 @@
 				9FE8B70B1B003DA80062EC6A /* LaunchScreen.xib in Resources */,
 				9FE8B7081B003DA80062EC6A /* Images.xcassets in Resources */,
 				9FE8B7231B0044970062EC6A /* Photos.plist in Resources */,
+				B036B0E31B01BB510031955E /* SetUpProfileStep3Item.plist in Resources */,
 				9FE8B7261B0044B70062EC6A /* Discover_Temp_Assets.xcassets in Resources */,
 				B0C17B551B00CEDD00ABCE36 /* MeView.xcassets in Resources */,
 			);
@@ -318,9 +331,12 @@
 				B0C17B531B008F1800ABCE36 /* MeViewController.swift in Sources */,
 				9FE8B72E1B0045A60062EC6A /* Photo.swift in Sources */,
 				B0C17B501B0089AB00ABCE36 /* MeLayout.swift in Sources */,
+				B036B0E51B01BD630031955E /* SetUpProfileStep3.swift in Sources */,
 				9FE8B72B1B0045230062EC6A /* SocialLayout.swift in Sources */,
 				9FE8B7031B003DA80062EC6A /* SecondViewController.swift in Sources */,
 				9FE8B7311B0045F80062EC6A /* AnnotatedPhotoCell.swift in Sources */,
+				B036B0DF1B01B1E00031955E /* SetUpProfileStep3CollectionViewController.swift in Sources */,
+				B036B0E11B01B27F0031955E /* SetUpProfileStep3Cell.swift in Sources */,
 				9FE8B6FF1B003DA80062EC6A /* AppDelegate.swift in Sources */,
 				9FE8B7341B0046200062EC6A /* RoundedCornersView.swift in Sources */,
 				9FE8B7011B003DA80062EC6A /* FirstViewController.swift in Sources */,

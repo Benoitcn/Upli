@@ -8,25 +8,22 @@
 
 import UIKit
 
-let reuseIdentifier = "Cell"
-
-class EditProfileViewController: UICollectionViewController, UIPickerViewDelegate,UIPickerViewDataSource {
+var txtName=""
+class EditProfileViewController: UICollectionViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let width = CGRectGetWidth(collectionView!.bounds)
         let layout = collectionViewLayout as! MeLayout
         layout.itemSize = CGSize(width: width, height: 50)
         layout.headerReferenceSize = CGSizeMake(width, 162)
-        
+
         //self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
+    override func awakeFromNib() {
+        //<#code#>
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
