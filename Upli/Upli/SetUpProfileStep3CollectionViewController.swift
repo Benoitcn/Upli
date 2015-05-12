@@ -21,8 +21,7 @@ class SetUpProfileStep3CollectionViewController: UICollectionViewController {
         
         let width = CGRectGetWidth(collectionView!.bounds)
         let layout = collectionViewLayout as! MeLayout
-        layout.itemSize = CGSize(width: width, height: 50)
-        layout.headerReferenceSize = CGSizeMake(width, 162)
+        layout.itemSize = CGSize(width: width, height: 100)
     }
 }
 extension SetUpProfileStep3CollectionViewController {
