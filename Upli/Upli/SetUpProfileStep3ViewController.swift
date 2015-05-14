@@ -18,6 +18,13 @@ class SetUpProfileStep3ViewController: UIViewController ,UIPickerViewDataSource,
     @IBOutlet var Picker2: UIPickerView!
     @IBOutlet var Picker3: UIPickerView!
     @IBOutlet var btSave: UIButton!
+    
+    
+    @IBAction func onButtonDismiss(){
+        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+            
+        })
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

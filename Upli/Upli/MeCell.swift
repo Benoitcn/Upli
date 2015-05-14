@@ -12,11 +12,11 @@ class MeCell: UICollectionViewCell {
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var titleIco: UIImageView!
     @IBOutlet private weak var separatorViewHeightLayoutConstraint: NSLayoutConstraint!
-    var session: Session? {
+    var me: Me? {
         didSet {
-            if let session = session {
-                titleLabel.text = session.title
-                titleIco.image=session.titleico
+            if let me = me {
+                titleLabel.text = me.title
+                titleIco.image=me.titleico
             }
         }
     }
