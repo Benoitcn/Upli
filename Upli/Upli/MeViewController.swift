@@ -41,8 +41,8 @@ extension MeViewController {
              anotherView = storyBoard.instantiateViewControllerWithIdentifier("MeStory") as! UIViewController
         }
         
-       // self.navigationController?.pushViewController(anotherView, animated: true)
-        self.navigationController?.presentViewController(anotherView, animated: true, completion: nil)
+       self.navigationController?.pushViewController(anotherView, animated: true)
+        //self.navigationController?.presentViewController(anotherView, animated: true, completion: nil)
     }
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return mes.count

@@ -15,15 +15,7 @@ class SetUpProfileStep2CollectionViewController: UICollectionViewController {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
-    var cameraButtonItem:UIBarButtonItem{
-        
-        return UIBarButtonItem(barButtonSystemItem:.Camera, target:self, action: "cameraAction:")
-    }
     
-    
-    func cameraAction(barButtonItem:UIBarButtonItem ){
-    print("111111")
-    }
     @IBAction func back(sender: AnyObject) {
          print("111111")
     }

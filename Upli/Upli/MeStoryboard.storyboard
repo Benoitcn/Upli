@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="erE-GJ-QIY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qmo-c7-H3r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="n0Y-Ht-lWQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="yM5-f5-MCT">
-                        <rect key="frame" x="0.0" y="64" width="600" height="556"/>
+                        <rect key="frame" x="0.0" y="44" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVi-jM-y1s">
@@ -160,7 +160,9 @@
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="训练习惯" id="YpB-6e-8eb">
-                        <barButtonItem key="backBarButtonItem" title="返回" id="VMr-nb-kFc"/>
+                        <barButtonItem key="backBarButtonItem" title="返回" id="VMr-nb-kFc">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
@@ -173,22 +175,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ne-2f-4Gc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="680" y="2337"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="MT4-xi-J2x">
-            <objects>
-                <navigationController id="erE-GJ-QIY" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GiT-lZ-yfF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Qmo-c7-H3r" kind="relationship" relationship="rootViewController" id="Cxb-fB-GMt"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j1B-fK-x37" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-881" y="2376"/>
         </scene>
         <!--我的目的-->
         <scene sceneID="QmP-Rj-HIO">
@@ -260,7 +246,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <segue destination="5pf-iZ-S9I" kind="modal" modalPresentationStyle="pageSheet" modalTransitionStyle="partialCurl" id="TuC-Q1-ub7"/>
+                                                <segue destination="5pf-iZ-S9I" kind="show" id="TuC-Q1-ub7"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -290,16 +276,13 @@
                         </connections>
                     </collectionView>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" title="我的目的" id="zG6-9d-41o">
-                        <barButtonItem key="backBarButtonItem" title="返回" id="bWu-tk-Ttr"/>
-                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="wFu-2X-Lle">
-                            <connections>
-                                <action selector="back:" destination="Qmo-c7-H3r" id="HLA-3E-qkG"/>
-                            </connections>
+                    <navigationItem key="navigationItem" title="我的目的" id="bN2-og-OK1">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="uuW-vU-kuJ">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nq9-so-HKU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -523,4 +506,5 @@
         <image name="edit-profile-chinese_final_save" width="359" height="44"/>
         <image name="me_final_photo" width="99" height="99"/>
     </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
