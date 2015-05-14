@@ -98,7 +98,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="crm-rF-POt" kind="relationship" relationship="rootViewController" id="ulR-SL-E0w"/>
+                        <segue destination="crm-rF-POt" kind="relationship" relationship="rootViewController" id="XdS-o4-FQ6"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SgP-Um-h0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -161,7 +161,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="600" height="238"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Header" translatesAutoresizingMaskIntoConstraints="NO" id="hOb-Rg-91B">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="me_final_bg" translatesAutoresizingMaskIntoConstraints="NO" id="hOb-Rg-91B">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="238"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="hOb-Rg-91B" secondAttribute="height" multiplier="1:1" id="RQx-eg-0u6"/>
@@ -710,6 +710,7 @@
         <image name="edit-profile-chinese_final_on" width="12" height="12"/>
         <image name="edit-profile-chinese_final_save" width="359" height="44"/>
         <image name="first" width="30" height="30"/>
+        <image name="me_final_bg" width="375" height="150"/>
         <image name="me_final_photo" width="99" height="99"/>
         <image name="second" width="30" height="30"/>
     </resources>

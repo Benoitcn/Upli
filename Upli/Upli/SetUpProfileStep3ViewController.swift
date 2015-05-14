@@ -12,7 +12,7 @@ class SetUpProfileStep3ViewController: UIViewController ,UIPickerViewDataSource,
  var PickerItem:NSArray = ["1","2","3","4","5","6"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        btSave.layer.cornerRadius=5
     }
     @IBOutlet var Picker1: UIPickerView!
     @IBOutlet var Picker2: UIPickerView!
