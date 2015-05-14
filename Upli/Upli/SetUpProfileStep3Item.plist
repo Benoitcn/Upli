@@ -2,41 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<dict>
-		<key>Title</key>
-		<string>平均每周的锻炼次数？</string>
-		<key>Pick</key>
-		<array>
-			<string>1</string>
-			<string>2</string>
-			<string>3</string>
-			<string>4</string>
-			<string>5</string>
-		</array>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>你上个月每周做几个不同的训练？</string>
-		<key>Pick</key>
-		<array>
-			<string>1</string>
-			<string>2</string>
-			<string>3</string>
-			<string>4</string>
-			<string>5</string>
-		</array>
-	</dict>
-	<dict>
-		<key>Title</key>
-		<string>每周计划的训练次数？</string>
-		<key>Pick</key>
-		<array>
-			<string>1</string>
-			<string>2</string>
-			<string>3</string>
-			<string>4</string>
-			<string>5</string>
-		</array>
-	</dict>
+	<string></string>
+	<string></string>
+	<string></string>
 </array>
 </plist>

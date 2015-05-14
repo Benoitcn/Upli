@@ -98,7 +98,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="zqG-c8-2Qf" kind="relationship" relationship="rootViewController" id="Iqq-r4-iWs"/>
+                        <segue destination="crm-rF-POt" kind="relationship" relationship="rootViewController" id="ulR-SL-E0w"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SgP-Um-h0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -127,7 +127,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QjG-KZ-SyI">
+                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QjG-KZ-SyI">
                                             <rect key="frame" x="0.0" y="0.0" width="212" height="48"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiF-Ob-wn0">
@@ -195,115 +195,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tmz-12-ZPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="667" y="738"/>
-        </scene>
-        <!--Set Up Profile Step3 Collection View Controller-->
-        <scene sceneID="irn-de-ygJ">
-            <objects>
-                <collectionViewController id="zqG-c8-2Qf" customClass="SetUpProfileStep3CollectionViewController" customModule="Upli" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" indicatorStyle="white" dataMode="prototypes" id="rOu-E8-jVx">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="shc-8A-ChO" customClass="MeLayout" customModule="Upli" customModuleProvider="target">
-                            <size key="itemSize" width="600" height="156"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="50" height="50"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SetUpProfileStep3Cell" id="fAa-BV-CXG" customClass="SetUpProfileStep3Cell" customModule="Upli" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSj-jW-jZC">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="平均每周的锻炼次数" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlu-mq-oLw">
-                                                    <rect key="frame" x="15" y="39" width="345" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fcd-b4-trE">
-                                                    <rect key="frame" x="503" y="-31" width="70" height="162"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="162" id="W1h-33-BYZ"/>
-                                                        <constraint firstAttribute="width" constant="70" id="oGT-qx-0Q9"/>
-                                                    </constraints>
-                                                </pickerView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="fcd-b4-trE" secondAttribute="trailing" constant="30" id="JV0-We-vz5"/>
-                                                <constraint firstAttribute="height" constant="100" id="YU0-5C-Vfg"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                                <constraints>
-                                    <constraint firstItem="WSj-jW-jZC" firstAttribute="leading" secondItem="fAa-BV-CXG" secondAttribute="leadingMargin" constant="-8" id="MLy-x9-7hO"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="WSj-jW-jZC" secondAttribute="trailing" constant="-8" id="hMh-fu-DxT"/>
-                                </constraints>
-                                <size key="customSize" width="600" height="100"/>
-                                <connections>
-                                    <outlet property="pickval" destination="fcd-b4-trE" id="jpA-Iw-Bgg"/>
-                                    <outlet property="separatorViewHeightLayoutConstraint" destination="YU0-5C-Vfg" id="O68-iy-hIW"/>
-                                    <outlet property="titleLabel" destination="qlu-mq-oLw" id="ncF-PW-ynI"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
-                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScheduleHeader" id="9fj-uM-STq" customClass="ScheduleHeaderView" customModule="Upli" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="164" width="600" height="50"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                            <subviews>
-                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ybZ-SG-o50">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5k-Ig-o7m">
-                                            <rect key="frame" x="93" y="3" width="414" height="44"/>
-                                            <state key="normal" image="edit-profile-chinese_final_save">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                        </button>
-                                    </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstAttribute="centerY" secondItem="j5k-Ig-o7m" secondAttribute="centerY" id="5VK-a4-YIB"/>
-                                        <constraint firstAttribute="height" constant="50" id="6ce-Jy-GVB"/>
-                                        <constraint firstAttribute="centerX" secondItem="j5k-Ig-o7m" secondAttribute="centerX" id="mfJ-cR-z8h"/>
-                                        <constraint firstAttribute="width" secondItem="ybZ-SG-o50" secondAttribute="height" multiplier="1:1" constant="-1" id="vzr-3B-gBI"/>
-                                    </constraints>
-                                </view>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="trailingMargin" secondItem="ybZ-SG-o50" secondAttribute="trailing" constant="-8" id="6UU-M7-KcV"/>
-                                <constraint firstItem="ybZ-SG-o50" firstAttribute="leading" secondItem="9fj-uM-STq" secondAttribute="leadingMargin" constant="-8" id="A1D-jC-eCs"/>
-                            </constraints>
-                            <connections>
-                                <outlet property="backgroundImageViewHeightConstraint" destination="vzr-3B-gBI" id="xkS-mi-8cM"/>
-                            </connections>
-                        </collectionReusableView>
-                        <connections>
-                            <outlet property="dataSource" destination="zqG-c8-2Qf" id="A1E-4U-flf"/>
-                            <outlet property="delegate" destination="zqG-c8-2Qf" id="EJn-xS-9cC"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" id="A2W-1o-7tU"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tVu-9g-rDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="37e-js-4dl">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </view>
-            </objects>
-            <point key="canvasLocation" x="667" y="1434"/>
         </scene>
         <!--Discover-->
         <scene sceneID="on0-KH-wgD">
@@ -534,6 +425,139 @@
             </objects>
             <point key="canvasLocation" x="1386" y="994"/>
         </scene>
+        <!--SetUpProfileStep3-->
+        <scene sceneID="HnV-4t-nBV">
+            <objects>
+                <viewController id="crm-rF-POt" customClass="SetUpProfileStep3ViewController" customModule="Upli" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gPq-zW-nkN"/>
+                        <viewControllerLayoutGuide type="bottom" id="tw0-YN-vsh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q08-Ln-fL1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AfF-Dn-qkU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vvg-MW-GhP">
+                                        <rect key="frame" x="522" y="16" width="70" height="162"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="KOj-5A-Y6Q"/>
+                                            <constraint firstAttribute="width" constant="70" id="XUL-xy-Rgt"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="dataSource" destination="crm-rF-POt" id="cYl-cA-VgO"/>
+                                            <outlet property="delegate" destination="crm-rF-POt" id="GDd-dT-Y0k"/>
+                                        </connections>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="平均每周锻炼几次？" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2t-rs-HiG">
+                                        <rect key="frame" x="8" y="39" width="153" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="Vvg-MW-GhP" secondAttribute="centerY" id="YMM-NW-hID"/>
+                                    <constraint firstAttribute="trailing" secondItem="Vvg-MW-GhP" secondAttribute="trailing" constant="8" id="ZzM-bK-bBn"/>
+                                    <constraint firstItem="E2t-rs-HiG" firstAttribute="leading" secondItem="AfF-Dn-qkU" secondAttribute="leading" constant="10" id="iXc-7W-WgG"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OrY-ZV-7j2">
+                                <rect key="frame" x="0.0" y="108" width="600" height="100"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cVc-zD-x5c">
+                                        <rect key="frame" x="522" y="15" width="70" height="162"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="1JN-v1-Ka9"/>
+                                            <constraint firstAttribute="height" constant="70" id="yPa-bC-jKR"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="dataSource" destination="crm-rF-POt" id="8wU-XD-sde"/>
+                                            <outlet property="delegate" destination="crm-rF-POt" id="GBY-4R-Icd"/>
+                                        </connections>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="你上个月每周做几个不同的训练？" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYV-fu-aka">
+                                        <rect key="frame" x="8" y="39" width="255" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="cVc-zD-x5c" secondAttribute="trailing" constant="8" id="Fml-WK-4Uj"/>
+                                    <constraint firstAttribute="centerY" secondItem="cVc-zD-x5c" secondAttribute="centerY" id="LrR-IM-Bqp"/>
+                                    <constraint firstItem="yYV-fu-aka" firstAttribute="leading" secondItem="OrY-ZV-7j2" secondAttribute="leading" constant="10" id="s9O-wq-wcw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4x0-vf-L4g">
+                                <rect key="frame" x="0.0" y="216" width="600" height="100"/>
+                                <subviews>
+                                    <pickerView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" showsSelectionIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZi-5b-ewY">
+                                        <rect key="frame" x="522" y="15" width="70" height="162"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="I8F-pp-FUx"/>
+                                            <constraint firstAttribute="height" constant="70" id="gjZ-pf-aYt"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="dataSource" destination="crm-rF-POt" id="aEc-Hb-cUZ"/>
+                                            <outlet property="delegate" destination="crm-rF-POt" id="1NG-RX-ad9"/>
+                                        </connections>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="每周计划的训练次数？" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQn-nU-AJf">
+                                        <rect key="frame" x="8" y="39" width="170" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="qQn-nU-AJf" firstAttribute="leading" secondItem="4x0-vf-L4g" secondAttribute="leading" constant="10" id="04c-oO-B9X"/>
+                                    <constraint firstAttribute="centerY" secondItem="UZi-5b-ewY" secondAttribute="centerY" id="FgC-4h-a76"/>
+                                    <constraint firstAttribute="trailing" secondItem="UZi-5b-ewY" secondAttribute="trailing" constant="8" id="wMZ-1d-tcd"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTs-NS-rJW">
+                                <rect key="frame" x="16" y="435" width="568" height="44"/>
+                                <color key="backgroundColor" red="0.27450980390000002" green="0.73725490199999999" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleShadowColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tw0-YN-vsh" firstAttribute="top" secondItem="UTs-NS-rJW" secondAttribute="bottom" constant="8" id="4bB-Lm-N7Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AfF-Dn-qkU" secondAttribute="trailing" constant="-16" id="OlM-EL-len"/>
+                            <constraint firstItem="AfF-Dn-qkU" firstAttribute="leading" secondItem="Q08-Ln-fL1" secondAttribute="leadingMargin" constant="-16" id="QLX-3x-gxE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UTs-NS-rJW" secondAttribute="trailing" constant="5" id="U2L-Bk-gTg"/>
+                            <constraint firstItem="4x0-vf-L4g" firstAttribute="leading" secondItem="Q08-Ln-fL1" secondAttribute="leadingMargin" constant="-16" id="cKl-xt-dd4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OrY-ZV-7j2" secondAttribute="trailing" constant="-16" id="hGC-lS-LhS"/>
+                            <constraint firstItem="UTs-NS-rJW" firstAttribute="leading" secondItem="Q08-Ln-fL1" secondAttribute="leadingMargin" constant="5" id="pUB-OC-hkh"/>
+                            <constraint firstItem="OrY-ZV-7j2" firstAttribute="leading" secondItem="Q08-Ln-fL1" secondAttribute="leadingMargin" constant="-16" id="uP3-4w-XVZ"/>
+                            <constraint firstAttribute="centerX" secondItem="UTs-NS-rJW" secondAttribute="centerX" id="uPS-VQ-mhI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4x0-vf-L4g" secondAttribute="trailing" constant="-16" id="zTB-zA-gCt"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" title="SetUpProfileStep3" id="pca-7g-Uob">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Kov-CF-6km"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="Picker1" destination="Vvg-MW-GhP" id="cFH-zo-unX"/>
+                        <outlet property="Picker2" destination="cVc-zD-x5c" id="PBx-hd-EFw"/>
+                        <outlet property="Picker3" destination="UZi-5b-ewY" id="tC6-3u-ih1"/>
+                        <outlet property="btSave" destination="UTs-NS-rJW" id="ScO-8r-sqn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMq-ON-2ig" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="1561"/>
+        </scene>
         <!--Discover-->
         <scene sceneID="KZf-wO-MEQ">
             <objects>
@@ -573,7 +597,7 @@
                                                         <constraint firstAttribute="width" constant="26" id="Oce-nu-hIl"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8T6-7R-ERX">

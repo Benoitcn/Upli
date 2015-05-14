@@ -28,6 +28,7 @@
 		B036B0E11B01B27F0031955E /* SetUpProfileStep3Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B036B0E01B01B27F0031955E /* SetUpProfileStep3Cell.swift */; };
 		B036B0E31B01BB510031955E /* SetUpProfileStep3Item.plist in Resources */ = {isa = PBXBuildFile; fileRef = B036B0E21B01BB510031955E /* SetUpProfileStep3Item.plist */; };
 		B036B0E51B01BD630031955E /* SetUpProfileStep3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B036B0E41B01BD630031955E /* SetUpProfileStep3.swift */; };
+		B05CA0FD1B04287E001A9CA6 /* SetUpProfileStep3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05CA0FC1B04287E001A9CA6 /* SetUpProfileStep3ViewController.swift */; };
 		B0C17B481B00865B00ABCE36 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C17B471B00865B00ABCE36 /* ScheduleCell.swift */; };
 		B0C17B4A1B0086B200ABCE36 /* Sessions.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0C17B491B0086B200ABCE36 /* Sessions.plist */; };
 		B0C17B4C1B0087DA00ABCE36 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C17B4B1B0087DA00ABCE36 /* Session.swift */; };
@@ -74,6 +75,7 @@
 		B036B0E01B01B27F0031955E /* SetUpProfileStep3Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpProfileStep3Cell.swift; sourceTree = "<group>"; };
 		B036B0E21B01BB510031955E /* SetUpProfileStep3Item.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SetUpProfileStep3Item.plist; sourceTree = "<group>"; };
 		B036B0E41B01BD630031955E /* SetUpProfileStep3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpProfileStep3.swift; sourceTree = "<group>"; };
+		B05CA0FC1B04287E001A9CA6 /* SetUpProfileStep3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpProfileStep3ViewController.swift; sourceTree = "<group>"; };
 		B0C17B471B00865B00ABCE36 /* ScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
 		B0C17B491B0086B200ABCE36 /* Sessions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Sessions.plist; sourceTree = "<group>"; };
 		B0C17B4B1B0087DA00ABCE36 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				B0C17B521B008F1800ABCE36 /* MeViewController.swift */,
 				B0C17B561B00F66B00ABCE36 /* EditProfileViewController.swift */,
 				B036B0DE1B01B1E00031955E /* SetUpProfileStep3CollectionViewController.swift */,
+				B05CA0FC1B04287E001A9CA6 /* SetUpProfileStep3ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -289,7 +292,7 @@
 				TargetAttributes = {
 					9FE8B6F81B003DA80062EC6A = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 6RV8S2L33H;
+						DevelopmentTeam = N85F8726Z2;
 					};
 					9FE8B70F1B003DA80062EC6A = {
 						CreatedOnToolsVersion = 6.4;
@@ -347,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0C17B531B008F1800ABCE36 /* MeViewController.swift in Sources */,
+				B05CA0FD1B04287E001A9CA6 /* SetUpProfileStep3ViewController.swift in Sources */,
 				9FE8B72E1B0045A60062EC6A /* Photo.swift in Sources */,
 				B0C17B501B0089AB00ABCE36 /* MeLayout.swift in Sources */,
 				B036B0E51B01BD630031955E /* SetUpProfileStep3.swift in Sources */,
@@ -490,7 +494,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (K6ZU7987DF)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
@@ -513,7 +517,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (K6ZU7987DF)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SYSTEM_APPS_DIR)/Reveal.app/Contents/SharedSupport/iOS-Libraries",
