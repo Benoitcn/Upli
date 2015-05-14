@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FootView: UICollectionReusableView {
+class FooterView: UICollectionReusableView {
     @IBOutlet private weak var backgroundImageView: UIView!
     @IBOutlet private weak var backgroundImageViewHeightConstraint:NSLayoutConstraint!
     @IBOutlet private weak var btNext:UIButton!

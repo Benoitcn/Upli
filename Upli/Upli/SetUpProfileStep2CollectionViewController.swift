@@ -15,6 +15,18 @@ class SetUpProfileStep2CollectionViewController: UICollectionViewController {
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
     }
+    var cameraButtonItem:UIBarButtonItem{
+        
+        return UIBarButtonItem(barButtonSystemItem:.Camera, target:self, action: "cameraAction:")
+    }
+    
+    
+    func cameraAction(barButtonItem:UIBarButtonItem ){
+    print("111111")
+    }
+    @IBAction func back(sender: AnyObject) {
+         print("111111")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
@@ -63,7 +75,8 @@ class SetUpProfileStep2CollectionViewController: UICollectionViewController {
 
 
     override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        let food = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "FootView", forIndexPath: indexPath) as! FootView
+        let food = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "FooterView", forIndexPath: indexPath) as! FooterView
+        
         return food
     }
     

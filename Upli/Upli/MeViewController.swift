@@ -10,7 +10,7 @@ import UIKit
 
 class MeViewController: UICollectionViewController {
     
-    let sessions = Session.allSessions()
+    let mes = Me.allSessions()
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
@@ -18,11 +18,11 @@ class MeViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+         
         let width = CGRectGetWidth(collectionView!.bounds)
         let layout = collectionViewLayout as! MeLayout
         layout.itemSize = CGSize(width: width, height: 50)
-        layout.headerReferenceSize = CGSizeMake(width, 162)
+        layout.headerReferenceSize = CGSizeMake(width, 202)
     }
     
 }
@@ -34,11 +34,18 @@ extension MeViewController {
         // Pass the selected object to the new view controller.
     }
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-   
+        var anotherView:UIViewController = UIViewController()
+        var storyBoard:UIStoryboard = UIStoryboard(name:"MeStoryboard",bundle:nil)
+        if indexPath.item==0
+        {
+             anotherView = storyBoard.instantiateViewControllerWithIdentifier("MeStory") as! UIViewController
+        }
         
+       // self.navigationController?.pushViewController(anotherView, animated: true)
+        self.navigationController?.presentViewController(anotherView, animated: true, completion: nil)
     }
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return sessions.count
+        return mes.count
     }
     
     override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
@@ -48,7 +55,7 @@ extension MeViewController {
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("MeCell", forIndexPath: indexPath)as! MeCell
-        cell.session = sessions[indexPath.item]
+        cell.me = mes[indexPath.item]
         return cell
     }
     
