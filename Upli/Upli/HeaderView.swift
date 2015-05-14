@@ -10,7 +10,7 @@
 
 import UIKit
 
-class ScheduleHeaderView: UICollectionReusableView {
+class HeaderView: UICollectionReusableView {
     
     @IBOutlet private weak var backgroundImageView: UIView!
     @IBOutlet private weak var backgroundImageViewHeightConstraint:NSLayoutConstraint!

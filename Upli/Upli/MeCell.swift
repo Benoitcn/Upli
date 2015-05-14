@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ScheduleCell: UICollectionViewCell {
+class MeCell: UICollectionViewCell {
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var titleIco: UIImageView!
     @IBOutlet private weak var separatorViewHeightLayoutConstraint: NSLayoutConstraint!

@@ -11,7 +11,7 @@ import UIKit
 extension UIImage {
     
     var decompressedImage: UIImage {
-        UIGraphicsBeginImageContextWithOptions(size, true, 0)
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
         drawAtPoint(CGPointZero)
         let decompressedImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
