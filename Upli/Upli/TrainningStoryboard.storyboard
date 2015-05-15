@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E17e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AjK-3W-SHp">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="fLU-Ha-DlA">
+            <objects>
+                <navigationController storyboardIdentifier="NavTrainning" id="AjK-3W-SHp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="87y-86-Q1r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vR5-pS-fwX" kind="relationship" relationship="rootViewController" id="d46-lg-ffg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fan-gm-tZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-211" y="-920"/>
+        </scene>
+        <!--Trainning-->
+        <scene sceneID="IZh-qE-QPw">
+            <objects>
+                <viewController id="vR5-pS-fwX" customClass="FirstViewController" customModule="Upli" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="acD-27-zAd"/>
+                        <viewControllerLayoutGuide type="bottom" id="DNd-h3-1DY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NRu-Pn-lfn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Trainning" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tHi-0m-dVM">
+                                <rect key="frame" x="226" y="279" width="149" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Last Module" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oe5-OY-a7V">
+                                <rect key="frame" x="247" y="329" width="108" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="tHi-0m-dVM" secondAttribute="centerY" id="Naa-R0-djc"/>
+                            <constraint firstAttribute="centerX" secondItem="tHi-0m-dVM" secondAttribute="centerX" id="eRe-wc-jEN"/>
+                            <constraint firstItem="Oe5-OY-a7V" firstAttribute="centerX" secondItem="tHi-0m-dVM" secondAttribute="centerX" id="mpu-sX-fzI"/>
+                            <constraint firstItem="Oe5-OY-a7V" firstAttribute="top" secondItem="tHi-0m-dVM" secondAttribute="bottom" constant="8" symbolic="YES" id="yBt-uS-pNh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trainning" image="first" id="Sk0-WH-24e"/>
+                    <navigationItem key="navigationItem" id="5o4-RH-d9Z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21e-u8-hBv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="-920"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>

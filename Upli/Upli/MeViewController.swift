@@ -18,7 +18,6 @@ class MeViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-         
         let width = CGRectGetWidth(collectionView!.bounds)
         let layout = collectionViewLayout as! MeLayout
         layout.itemSize = CGSize(width: width, height: 50)
@@ -35,14 +34,14 @@ extension MeViewController {
     }
     override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         var anotherView:UIViewController = UIViewController()
-        var storyBoard:UIStoryboard = UIStoryboard(name:"MeStoryboard",bundle:nil)
+        var storyBoard:UIStoryboard = self.storyboard!
         if indexPath.item==0
         {
-             anotherView = storyBoard.instantiateViewControllerWithIdentifier("MeStory") as! UIViewController
+             anotherView = storyBoard.instantiateViewControllerWithIdentifier("NavMe2") as! UIViewController
         }
         
-       self.navigationController?.pushViewController(anotherView, animated: true)
-        //self.navigationController?.presentViewController(anotherView, animated: true, completion: nil)
+       //self.navigationController?.pushViewController(anotherView, animated: true)
+        self.navigationController?.presentViewController(anotherView, animated: true, completion: nil)
     }
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return mes.count

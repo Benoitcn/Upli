@@ -31,6 +31,10 @@
 		B05CA1051B044255001A9CA6 /* SetUpProfileStep2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05CA1041B044255001A9CA6 /* SetUpProfileStep2.swift */; };
 		B05CA1091B047249001A9CA6 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05CA1081B047249001A9CA6 /* FooterView.swift */; };
 		B05CA10D1B048B8E001A9CA6 /* MeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B05CA10C1B048B8E001A9CA6 /* MeStoryboard.storyboard */; };
+		B05CA1101B0573A6001A9CA6 /* DiscoverStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B05CA10F1B0573A6001A9CA6 /* DiscoverStoryboard.storyboard */; };
+		B05CA1121B0574D8001A9CA6 /* TrainningStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B05CA1111B0574D8001A9CA6 /* TrainningStoryboard.storyboard */; };
+		B05CA1141B057518001A9CA6 /* NewsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B05CA1131B057518001A9CA6 /* NewsStoryboard.storyboard */; };
+		B05CA1161B0575D4001A9CA6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05CA1151B0575D4001A9CA6 /* MainTabBarController.swift */; };
 		B0C17B481B00865B00ABCE36 /* MeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C17B471B00865B00ABCE36 /* MeCell.swift */; };
 		B0C17B4A1B0086B200ABCE36 /* Me.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0C17B491B0086B200ABCE36 /* Me.plist */; };
 		B0C17B4C1B0087DA00ABCE36 /* Me.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C17B4B1B0087DA00ABCE36 /* Me.swift */; };
@@ -80,6 +84,10 @@
 		B05CA1041B044255001A9CA6 /* SetUpProfileStep2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUpProfileStep2.swift; sourceTree = "<group>"; };
 		B05CA1081B047249001A9CA6 /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		B05CA10C1B048B8E001A9CA6 /* MeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeStoryboard.storyboard; sourceTree = "<group>"; };
+		B05CA10F1B0573A6001A9CA6 /* DiscoverStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DiscoverStoryboard.storyboard; sourceTree = "<group>"; };
+		B05CA1111B0574D8001A9CA6 /* TrainningStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TrainningStoryboard.storyboard; sourceTree = "<group>"; };
+		B05CA1131B057518001A9CA6 /* NewsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewsStoryboard.storyboard; sourceTree = "<group>"; };
+		B05CA1151B0575D4001A9CA6 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		B0C17B471B00865B00ABCE36 /* MeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeCell.swift; sourceTree = "<group>"; };
 		B0C17B491B0086B200ABCE36 /* Me.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Me.plist; sourceTree = "<group>"; };
 		B0C17B4B1B0087DA00ABCE36 /* Me.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Me.swift; sourceTree = "<group>"; };
@@ -141,6 +149,7 @@
 		9FE8B6FB1B003DA80062EC6A /* Upli */ = {
 			isa = PBXGroup;
 			children = (
+				B05CA10E1B057346001A9CA6 /* StoryBoard */,
 				B0C17B511B008EFF00ABCE36 /* Controller */,
 				9FE8B7321B0045FD0062EC6A /* Views */,
 				9FE8B72F1B0045AB0062EC6A /* Models */,
@@ -152,7 +161,6 @@
 				9FE8B7001B003DA80062EC6A /* FirstViewController.swift */,
 				9FE8B7021B003DA80062EC6A /* SecondViewController.swift */,
 				9FE8B7041B003DA80062EC6A /* Main.storyboard */,
-				B05CA10C1B048B8E001A9CA6 /* MeStoryboard.storyboard */,
 				9FE8B7091B003DA80062EC6A /* LaunchScreen.xib */,
 				9FCA803D1B00B6A200EE16D4 /* Frameworks */,
 				9FE8B6FC1B003DA80062EC6A /* Supporting Files */,
@@ -238,6 +246,17 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		B05CA10E1B057346001A9CA6 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				B05CA10C1B048B8E001A9CA6 /* MeStoryboard.storyboard */,
+				B05CA10F1B0573A6001A9CA6 /* DiscoverStoryboard.storyboard */,
+				B05CA1111B0574D8001A9CA6 /* TrainningStoryboard.storyboard */,
+				B05CA1131B057518001A9CA6 /* NewsStoryboard.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
 		B0C17B511B008EFF00ABCE36 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +264,7 @@
 				B0C17B561B00F66B00ABCE36 /* EditProfileViewController.swift */,
 				B05CA0FC1B04287E001A9CA6 /* SetUpProfileStep3ViewController.swift */,
 				B05CA0FE1B04416A001A9CA6 /* SetUpProfileStep2CollectionViewController.swift */,
+				B05CA1151B0575D4001A9CA6 /* MainTabBarController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -330,10 +350,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B05CA1101B0573A6001A9CA6 /* DiscoverStoryboard.storyboard in Resources */,
 				9FE8B7061B003DA80062EC6A /* Main.storyboard in Resources */,
 				B0C17B4A1B0086B200ABCE36 /* Me.plist in Resources */,
 				9FE8B70B1B003DA80062EC6A /* LaunchScreen.xib in Resources */,
+				B05CA1121B0574D8001A9CA6 /* TrainningStoryboard.storyboard in Resources */,
 				9FE8B7081B003DA80062EC6A /* Images.xcassets in Resources */,
+				B05CA1141B057518001A9CA6 /* NewsStoryboard.storyboard in Resources */,
 				B05CA10D1B048B8E001A9CA6 /* MeStoryboard.storyboard in Resources */,
 				9FE8B7231B0044970062EC6A /* Photos.plist in Resources */,
 				B036B0E31B01BB510031955E /* SetUpProfileStep2Item.plist in Resources */,
@@ -373,6 +396,7 @@
 				B0C17B4C1B0087DA00ABCE36 /* Me.swift in Sources */,
 				B05CA1031B0441B4001A9CA6 /* SetUpProfileStep2Cell.swift in Sources */,
 				B0C17B4E1B00891300ABCE36 /* HeaderView.swift in Sources */,
+				B05CA1161B0575D4001A9CA6 /* MainTabBarController.swift in Sources */,
 				9FE8B7281B0044F90062EC6A /* UIImage+Decompression.swift in Sources */,
 				9FE8B7361B004E540062EC6A /* DiscoverViewController.swift in Sources */,
 				B0C17B481B00865B00ABCE36 /* MeCell.swift in Sources */,

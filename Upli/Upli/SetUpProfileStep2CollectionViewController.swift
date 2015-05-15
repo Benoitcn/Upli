@@ -17,7 +17,9 @@ class SetUpProfileStep2CollectionViewController: UICollectionViewController {
     }
     
     @IBAction func back(sender: AnyObject) {
-         print("111111")
+        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+            
+        })
     }
     override func viewDidLoad() {
         super.viewDidLoad()
